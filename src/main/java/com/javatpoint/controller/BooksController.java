@@ -27,9 +27,7 @@ public class BooksController
     @GetMapping("/book")
     private List<Books> getAllBooks()
     {
-        MDC.put("TRACE_ID","1234");
         logger.info("getAllBooks() called");
-        MDC.remove("TRACE_ID");
         return booksService.getAllBooks();
 
     }
