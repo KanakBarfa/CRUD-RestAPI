@@ -1,4 +1,6 @@
 package com.javatpoint.controller;
+import java.awt.*;
+import java.io.Console;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -11,17 +13,23 @@ import org.springframework.web.bind.annotation.RestController;
 import com.javatpoint.model.Books;
 import com.javatpoint.service.BooksService;
 //mark class as Controller
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 @RestController
 public class BooksController
 {
     //autowire the BooksService class
+    private static final Logger logger = LoggerFactory.getLogger(BooksController.class);
     @Autowired
     BooksService booksService;
     //creating a get mapping that retrieves all the books detail from the database
     @GetMapping("/book")
     private List<Books> getAllBooks()
     {
+        logger.info("getAllBooks() called");
         return booksService.getAllBooks();
+
     }
     //creating a get mapping that retrieves the detail of a specific book
     @GetMapping("/book/{bookid}")
