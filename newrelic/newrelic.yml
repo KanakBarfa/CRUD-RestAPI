@@ -279,11 +279,9 @@ common: &default_settings
       enabled: true
 
       # A comma separated list of attribute keys whose values should be sent to New Relic.
-      #include:
-
+#      include:
       # A comma separated list of attribute keys whose values should not be sent to New Relic.
-      #exclude:
-
+#      exclude:
   # Cross Application Tracing adds request and response headers to
   # external calls using supported HTTP libraries to provide better
   # performance data when calling applications monitored by other New Relic agents.
@@ -329,23 +327,6 @@ common: &default_settings
     com.newrelic.instrumentation.servlet-user:
       enabled: false
 
-    com.newrelic.instrumentation.spring-aop-2:
-      enabled: false
-
-    # This instrumentation reports metrics for resultset operations.
-    com.newrelic.instrumentation.jdbc-resultset:
-      enabled: false
-
-    # Classes loaded by classloaders in this list will not be instrumented.
-    # This is a useful optimization for runtimes which use classloaders to
-    # load dynamic classes which the agent would not instrument.
-    classloader_excludes:
-      groovy.lang.GroovyClassLoader$InnerLoader,
-      org.codehaus.groovy.runtime.callsite.CallSiteClassLoader,
-      com.collaxa.cube.engine.deployment.BPELClassLoader,
-      org.springframework.data.convert.ClassGeneratingEntityInstantiator$ObjectInstantiatorClassGenerator,
-      org.mvel2.optimizers.impl.asm.ASMAccessorOptimizer$ContextClassLoader,
-      gw.internal.gosu.compiler.SingleServingGosuClassLoader,
 
   # Real-time profiling using Java Flight Recorder (JFR).
   # This feature reports dimensional metrics to the ingest endpoint configured by
@@ -371,7 +352,6 @@ common: &default_settings
 
   # An example label
   #label_name: label_value
-
 # Application Environments
 # ------------------------------------------
 # Environment specific settings are in this section.
