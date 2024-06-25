@@ -16,18 +16,21 @@ import com.javatpoint.service.BooksService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
+import lombok.extern.slf4j.Slf4j;
 @RestController
+@Slf4j
 public class BooksController
 {
     //autowire the BooksService class
-    private static final Logger logger = LoggerFactory.getLogger(BooksController.class);
+//    private static final Logger logger = LoggerFactory.getLogger(BooksController.class);
     @Autowired
     BooksService booksService;
     //creating a get mapping that retrieves all the books detail from the database
     @GetMapping("/book")
     private List<Books> getAllBooks()
     {
-        logger.info("getAllBooks() called");
+        log.error("getAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() called");
+        log.info("getAllBooks() called");
         return booksService.getAllBooks();
 
     }

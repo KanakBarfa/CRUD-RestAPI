@@ -2286,3 +2286,845 @@ java.lang.ClassCastException: class java.util.HashMap cannot be cast to class ja
 2024-06-21T13:43:27,956+0530 [28349 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
 2024-06-21T13:43:27,958+0530 [28349 68] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for My_local_apm: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@d0da752[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@458cf1ef[Wrapped task = com.newrelic.agent.util.SafeWrappers$1@6c78f123]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2881ad47[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
 2024-06-21T13:43:29,487+0530 [28349 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-21T13:47:47,276+0530 [29043 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-21T13:47:47,276+0530 [29043 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-21T13:47:47,276+0530 [29043 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-21T13:47:47,276+0530 [29043 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-21T13:47:47,276+0530 [29043 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-21T13:47:47,276+0530 [29043 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-21T13:47:47,512+0530 [29043 37] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-21T13:47:49,088+0530 [29043 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-21T13:47:49,171+0530 [29043 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-21T13:47:49,222+0530 [29043 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-21T13:47:49,224+0530 [29043 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-21T13:47:49,224+0530 [29043 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-21T13:47:49,224+0530 [29043 1] com.newrelic INFO: Premain startup complete in 2,349ms
+2024-06-21T13:47:49,225+0530 [29043 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-21T13:47:50,617+0530 [29043 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-21T13:47:54,228+0530 [29043 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-21T13:47:54,229+0530 [29043 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T13:47:55,933+0530 [29043 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-21T13:47:57,864+0530 [29043 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-21T13:47:57,864+0530 [29043 68] com.newrelic INFO: Agent run id: BfoXwZHBwkzQAEQrqj_yzJpmdTd0AAIBAAAnIQEAAHFzAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-21T13:47:57,864+0530 [29043 68] com.newrelic INFO: Agent 29043@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-21T13:47:57,864+0530 [29043 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-21T13:47:57,865+0530 [29043 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T13:47:57,865+0530 [29043 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T13:47:57,865+0530 [29043 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T13:47:57,866+0530 [29043 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T13:47:57,866+0530 [29043 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T13:47:57,866+0530 [29043 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T13:47:58,487+0530 [29043 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-21T13:47:58,487+0530 [29043 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T13:52:09,219+0530 [29043 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-21T13:52:09,234+0530 [29043 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@64660549 tried to finish but ServiceManager not started
+2024-06-21T13:52:10,581+0530 [29043 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-21T14:34:29,081+0530 [31020 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-21T14:34:29,081+0530 [31020 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-21T14:34:29,081+0530 [31020 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-21T14:34:29,081+0530 [31020 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-21T14:34:29,082+0530 [31020 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-21T14:34:29,082+0530 [31020 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-21T14:34:29,597+0530 [31020 40] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-21T14:34:30,159+0530 [31020 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-21T14:34:30,334+0530 [31020 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-21T14:34:30,444+0530 [31020 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-21T14:34:30,448+0530 [31020 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-21T14:34:30,448+0530 [31020 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-21T14:34:30,448+0530 [31020 1] com.newrelic INFO: Premain startup complete in 2,215ms
+2024-06-21T14:34:30,450+0530 [31020 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-21T14:34:33,314+0530 [31020 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-21T14:34:40,451+0530 [31020 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-21T14:34:40,453+0530 [31020 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T14:34:42,240+0530 [31020 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-21T14:34:43,356+0530 [31020 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-21T14:34:43,356+0530 [31020 68] com.newrelic INFO: Agent run id: BSTckU39SAigAEQrqj_yzJpmdUJ4AAIBAAAnIQEAAHksAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-21T14:34:43,356+0530 [31020 68] com.newrelic INFO: Agent 31020@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-21T14:34:43,357+0530 [31020 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-21T14:34:43,359+0530 [31020 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T14:34:43,359+0530 [31020 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T14:34:43,359+0530 [31020 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T14:34:43,362+0530 [31020 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T14:34:43,362+0530 [31020 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T14:34:43,362+0530 [31020 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T14:34:44,584+0530 [31020 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-21T14:34:44,584+0530 [31020 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T14:35:20,765+0530 [31020 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-21T14:35:20,801+0530 [31020 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@63a602e2 tried to finish but ServiceManager not started
+2024-06-21T14:35:22,164+0530 [31020 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-21T15:00:56,180+0530 [33188 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-21T15:00:56,181+0530 [33188 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-21T15:00:56,181+0530 [33188 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-21T15:00:56,181+0530 [33188 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-21T15:00:56,181+0530 [33188 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-21T15:00:56,181+0530 [33188 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-21T15:00:56,723+0530 [33188 43] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-21T15:00:57,271+0530 [33188 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-21T15:00:57,438+0530 [33188 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-21T15:00:57,548+0530 [33188 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-21T15:00:57,552+0530 [33188 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-21T15:00:57,552+0530 [33188 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-21T15:00:57,552+0530 [33188 1] com.newrelic INFO: Premain startup complete in 2,127ms
+2024-06-21T15:00:57,554+0530 [33188 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-21T15:01:00,452+0530 [33188 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-21T15:01:07,555+0530 [33188 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-21T15:01:07,557+0530 [33188 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T15:01:09,155+0530 [33188 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-21T15:01:10,246+0530 [33188 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-21T15:01:10,246+0530 [33188 68] com.newrelic INFO: Agent run id: BV04afWa6vs0AEQrqj_yzJpmdUjMAAIBAAAnIQEAAIGkAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-21T15:01:10,246+0530 [33188 68] com.newrelic INFO: Agent 33188@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-21T15:01:10,247+0530 [33188 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-21T15:01:10,249+0530 [33188 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T15:01:10,249+0530 [33188 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T15:01:10,249+0530 [33188 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T15:01:10,251+0530 [33188 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T15:01:10,251+0530 [33188 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T15:01:10,252+0530 [33188 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T15:01:10,898+0530 [33188 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-21T15:01:10,899+0530 [33188 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T15:03:28,681+0530 [33188 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-21T15:03:28,713+0530 [33188 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@4d4f800 tried to finish but ServiceManager not started
+2024-06-21T15:03:30,203+0530 [33188 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-21T15:03:36,158+0530 [33601 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-21T15:03:36,158+0530 [33601 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-21T15:03:36,158+0530 [33601 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-21T15:03:36,158+0530 [33601 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-21T15:03:36,159+0530 [33601 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-21T15:03:36,159+0530 [33601 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-21T15:03:36,710+0530 [33601 40] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-21T15:03:37,285+0530 [33601 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-21T15:03:37,438+0530 [33601 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-21T15:03:37,541+0530 [33601 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-21T15:03:37,544+0530 [33601 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-21T15:03:37,545+0530 [33601 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-21T15:03:37,545+0530 [33601 1] com.newrelic INFO: Premain startup complete in 2,171ms
+2024-06-21T15:03:37,546+0530 [33601 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-21T15:03:40,397+0530 [33601 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-21T15:03:47,546+0530 [33601 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-21T15:03:47,547+0530 [33601 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T15:03:49,359+0530 [33601 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-21T15:03:51,370+0530 [33601 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-21T15:03:51,370+0530 [33601 68] com.newrelic INFO: Agent run id: BZpj05vfr51mAEQrqj_yzJpmdUlEAAIBAAAnIQEAAINBAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-21T15:03:51,371+0530 [33601 68] com.newrelic INFO: Agent 33601@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-21T15:03:51,372+0530 [33601 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-21T15:03:51,374+0530 [33601 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T15:03:51,374+0530 [33601 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T15:03:51,374+0530 [33601 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T15:03:51,376+0530 [33601 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T15:03:51,376+0530 [33601 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T15:03:51,376+0530 [33601 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T15:03:52,509+0530 [33601 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-21T15:03:52,509+0530 [33601 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T15:08:12,459+0530 [33601 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-21T15:08:12,482+0530 [33601 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@6efc1edb tried to finish but ServiceManager not started
+2024-06-21T15:08:13,767+0530 [33601 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-21T16:10:22,126+0530 [38484 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-21T16:10:22,126+0530 [38484 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-21T16:10:22,126+0530 [38484 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-21T16:10:22,126+0530 [38484 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-21T16:10:22,126+0530 [38484 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-21T16:10:22,126+0530 [38484 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-21T16:10:22,346+0530 [38484 37] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-21T16:10:22,669+0530 [38484 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-21T16:10:22,761+0530 [38484 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-21T16:10:22,818+0530 [38484 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-21T16:10:22,821+0530 [38484 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-21T16:10:22,821+0530 [38484 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-21T16:10:22,821+0530 [38484 1] com.newrelic INFO: Premain startup complete in 1,077ms
+2024-06-21T16:10:22,822+0530 [38484 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-21T16:10:24,361+0530 [38484 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-21T16:10:27,821+0530 [38484 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-21T16:10:27,822+0530 [38484 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T16:10:29,134+0530 [38484 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-21T16:10:30,739+0530 [38484 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-21T16:10:30,739+0530 [38484 68] com.newrelic INFO: Agent run id: Bf0CBRCQ4_rHAEQrqj_yzJpmdVj4AAIBAAAnIQEAAJZUAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-21T16:10:30,740+0530 [38484 68] com.newrelic INFO: Agent 38484@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-21T16:10:30,740+0530 [38484 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-21T16:10:30,741+0530 [38484 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T16:10:30,741+0530 [38484 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T16:10:30,741+0530 [38484 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T16:10:30,742+0530 [38484 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T16:10:30,742+0530 [38484 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T16:10:30,742+0530 [38484 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T16:10:31,278+0530 [38484 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-21T16:10:31,278+0530 [38484 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T16:10:54,266+0530 [38484 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-21T16:10:54,285+0530 [38484 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@58d81a7 tried to finish but ServiceManager not started
+2024-06-21T16:10:55,465+0530 [38484 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-21T16:10:56,527+0530 [38762 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-21T16:10:56,528+0530 [38762 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-21T16:10:56,528+0530 [38762 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-21T16:10:56,528+0530 [38762 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-21T16:10:56,528+0530 [38762 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-21T16:10:56,528+0530 [38762 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-21T16:10:56,765+0530 [38762 37] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-21T16:10:57,058+0530 [38762 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-21T16:10:57,144+0530 [38762 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-21T16:10:57,199+0530 [38762 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-21T16:10:57,201+0530 [38762 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-21T16:10:57,201+0530 [38762 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-21T16:10:57,202+0530 [38762 1] com.newrelic INFO: Premain startup complete in 1,069ms
+2024-06-21T16:10:57,202+0530 [38762 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-21T16:10:58,628+0530 [38762 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-21T16:11:02,202+0530 [38762 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-21T16:11:02,203+0530 [38762 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T16:11:03,335+0530 [38762 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-21T16:11:04,750+0530 [38762 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-21T16:11:04,750+0530 [38762 68] com.newrelic INFO: Agent run id: BclN4eP7Z5x8AEQrqj_yzJpmdVk0AAIBAAAnIQEAAJdqAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-21T16:11:04,750+0530 [38762 68] com.newrelic INFO: Agent 38762@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-21T16:11:04,751+0530 [38762 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-21T16:11:04,751+0530 [38762 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T16:11:04,752+0530 [38762 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T16:11:04,752+0530 [38762 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T16:11:04,752+0530 [38762 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T16:11:04,753+0530 [38762 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T16:11:04,753+0530 [38762 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T16:11:06,093+0530 [38762 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-21T16:11:06,093+0530 [38762 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T16:11:07,104+0530 [38762 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-21T16:11:07,122+0530 [38762 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@4766e82 tried to finish but ServiceManager not started
+2024-06-21T16:11:07,383+0530 [38762 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-21T16:11:21,113+0530 [39059 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-21T16:11:21,113+0530 [39059 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-21T16:11:21,113+0530 [39059 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-21T16:11:21,113+0530 [39059 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-21T16:11:21,113+0530 [39059 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-21T16:11:21,113+0530 [39059 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-21T16:11:21,351+0530 [39059 37] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-21T16:11:21,664+0530 [39059 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-21T16:11:21,748+0530 [39059 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-21T16:11:21,806+0530 [39059 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-21T16:11:21,809+0530 [39059 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-21T16:11:21,809+0530 [39059 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-21T16:11:21,809+0530 [39059 1] com.newrelic INFO: Premain startup complete in 1,090ms
+2024-06-21T16:11:21,810+0530 [39059 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-21T16:11:23,359+0530 [39059 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-21T16:11:26,810+0530 [39059 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-21T16:11:26,811+0530 [39059 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-21T16:11:27,355+0530 [39059 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-21T16:11:27,375+0530 [39059 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@4b0251a tried to finish but ServiceManager not started
+2024-06-21T16:11:28,220+0530 [39059 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-21T16:11:29,803+0530 [39059 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-21T16:11:29,803+0530 [39059 68] com.newrelic INFO: Agent run id: BS2Vz7v8BP09AEQrqj_yzJpmdVk0AAIBAAAnIQEAAJiTAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-21T16:11:29,803+0530 [39059 68] com.newrelic INFO: Agent 39059@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-21T16:11:29,804+0530 [39059 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-21T16:11:29,805+0530 [39059 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T16:11:29,805+0530 [39059 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T16:11:29,805+0530 [39059 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T16:11:29,806+0530 [39059 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-21T16:11:29,806+0530 [39059 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-21T16:11:29,806+0530 [39059 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-21T16:11:29,808+0530 [39059 68] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for My_local_apm: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@4cd77d2a[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@25371430[Wrapped task = com.newrelic.agent.util.SafeWrappers$1@50bba573]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@1931d99[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-06-21T16:11:30,947+0530 [39059 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T11:09:16,168+0530 [6382 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T11:09:16,169+0530 [6382 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T11:09:16,169+0530 [6382 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T11:09:16,169+0530 [6382 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T11:09:16,169+0530 [6382 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T11:09:16,169+0530 [6382 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T11:09:16,763+0530 [6382 38] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T11:09:17,395+0530 [6382 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T11:09:17,572+0530 [6382 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T11:09:17,676+0530 [6382 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T11:09:17,680+0530 [6382 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T11:09:17,680+0530 [6382 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T11:09:17,681+0530 [6382 1] com.newrelic INFO: Premain startup complete in 2,427ms
+2024-06-24T11:09:17,682+0530 [6382 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T11:09:20,736+0530 [6382 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T11:09:27,683+0530 [6382 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T11:09:27,685+0530 [6382 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:09:29,408+0530 [6382 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T11:09:31,477+0530 [6382 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T11:09:31,477+0530 [6382 68] com.newrelic INFO: Agent run id: BT4S-332B6K_AEQrqj_yzJpmeQbsAAIBAAAnIQEAABjuAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T11:09:31,477+0530 [6382 68] com.newrelic INFO: Agent 6382@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T11:09:31,478+0530 [6382 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T11:09:31,480+0530 [6382 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:09:31,480+0530 [6382 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:09:31,481+0530 [6382 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:09:31,483+0530 [6382 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:09:31,483+0530 [6382 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:09:31,483+0530 [6382 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:09:32,118+0530 [6382 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T11:09:32,118+0530 [6382 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:16:18,435+0530 [6382 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T11:16:18,462+0530 [6382 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@3d55ea05 tried to finish but ServiceManager not started
+2024-06-24T11:16:19,775+0530 [6382 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T11:16:51,764+0530 [7532 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T11:16:51,764+0530 [7532 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T11:16:51,764+0530 [7532 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T11:16:51,765+0530 [7532 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T11:16:51,765+0530 [7532 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T11:16:51,765+0530 [7532 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T11:16:52,268+0530 [7532 38] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T11:16:53,197+0530 [7532 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T11:16:53,386+0530 [7532 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T11:16:53,495+0530 [7532 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T11:16:53,499+0530 [7532 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T11:16:53,499+0530 [7532 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T11:16:53,499+0530 [7532 1] com.newrelic INFO: Premain startup complete in 2,491ms
+2024-06-24T11:16:53,501+0530 [7532 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T11:16:56,422+0530 [7532 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T11:17:03,501+0530 [7532 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T11:17:03,503+0530 [7532 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:17:05,152+0530 [7532 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T11:17:06,221+0530 [7532 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T11:17:06,222+0530 [7532 68] com.newrelic INFO: Agent run id: Ba33x-74F06OAEQrqj_yzJpmeQjMAAIBAAAnIQEAAB1sAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T11:17:06,222+0530 [7532 68] com.newrelic INFO: Agent 7532@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T11:17:06,222+0530 [7532 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T11:17:06,224+0530 [7532 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:17:06,225+0530 [7532 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:17:06,225+0530 [7532 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:17:06,227+0530 [7532 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:17:06,227+0530 [7532 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:17:06,227+0530 [7532 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:17:07,496+0530 [7532 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T11:17:07,497+0530 [7532 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:22:00,435+0530 [7532 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T11:22:00,470+0530 [7532 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@56341a54 tried to finish but ServiceManager not started
+2024-06-24T11:22:01,903+0530 [7532 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T11:22:49,347+0530 [9543 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T11:22:49,347+0530 [9543 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T11:22:49,347+0530 [9543 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T11:22:49,347+0530 [9543 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T11:22:49,347+0530 [9543 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T11:22:49,347+0530 [9543 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T11:22:49,884+0530 [9543 43] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T11:22:50,455+0530 [9543 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T11:22:50,630+0530 [9543 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T11:22:50,740+0530 [9543 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T11:22:50,744+0530 [9543 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T11:22:50,744+0530 [9543 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T11:22:50,745+0530 [9543 1] com.newrelic INFO: Premain startup complete in 2,195ms
+2024-06-24T11:22:50,746+0530 [9543 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T11:22:53,525+0530 [9543 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T11:23:00,748+0530 [9543 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T11:23:00,749+0530 [9543 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:23:02,461+0530 [9543 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T11:23:04,309+0530 [9543 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T11:23:04,309+0530 [9543 68] com.newrelic INFO: Agent run id: BVifnoTAgj0MAEQrqj_yzJpmeQo0AAIBAAAnIQEAACVHAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T11:23:04,309+0530 [9543 68] com.newrelic INFO: Agent 9543@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T11:23:04,310+0530 [9543 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T11:23:04,313+0530 [9543 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:23:04,313+0530 [9543 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:23:04,313+0530 [9543 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:23:04,316+0530 [9543 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:23:04,316+0530 [9543 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:23:04,316+0530 [9543 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:23:05,602+0530 [9543 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T11:23:05,602+0530 [9543 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:24:14,709+0530 [9543 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T11:24:14,746+0530 [9543 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@1e41bc4d tried to finish but ServiceManager not started
+2024-06-24T11:24:16,034+0530 [9543 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T11:25:04,748+0530 [10171 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T11:25:04,749+0530 [10171 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T11:25:04,749+0530 [10171 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T11:25:04,749+0530 [10171 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T11:25:04,749+0530 [10171 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T11:25:04,749+0530 [10171 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T11:25:05,301+0530 [10171 38] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T11:25:07,090+0530 [10171 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T11:25:07,281+0530 [10171 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T11:25:07,401+0530 [10171 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T11:25:07,404+0530 [10171 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T11:25:07,405+0530 [10171 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T11:25:07,405+0530 [10171 1] com.newrelic INFO: Premain startup complete in 3,414ms
+2024-06-24T11:25:07,407+0530 [10171 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T11:25:10,479+0530 [10171 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T11:25:17,407+0530 [10171 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T11:25:17,408+0530 [10171 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:25:19,044+0530 [10171 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T11:25:21,014+0530 [10171 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T11:25:21,014+0530 [10171 68] com.newrelic INFO: Agent run id: BatlokbAV8_TAEQrqj_yzJpmeQqsAAIBAAAnIQEAACe7AgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T11:25:21,015+0530 [10171 68] com.newrelic INFO: Agent 10171@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T11:25:21,015+0530 [10171 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T11:25:21,017+0530 [10171 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:25:21,018+0530 [10171 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:25:21,018+0530 [10171 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:25:21,021+0530 [10171 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:25:21,021+0530 [10171 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:25:21,021+0530 [10171 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:25:22,211+0530 [10171 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T11:25:22,212+0530 [10171 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:30:31,192+0530 [10171 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T11:30:31,225+0530 [10171 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@2660ffb7 tried to finish but ServiceManager not started
+2024-06-24T11:30:31,780+0530 [10171 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T11:30:47,323+0530 [11008 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T11:30:47,324+0530 [11008 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T11:30:47,324+0530 [11008 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T11:30:47,324+0530 [11008 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T11:30:47,324+0530 [11008 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T11:30:47,324+0530 [11008 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T11:30:47,853+0530 [11008 43] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T11:30:48,461+0530 [11008 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T11:30:48,638+0530 [11008 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T11:30:48,748+0530 [11008 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T11:30:48,752+0530 [11008 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T11:30:48,752+0530 [11008 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T11:30:48,752+0530 [11008 1] com.newrelic INFO: Premain startup complete in 2,216ms
+2024-06-24T11:30:48,754+0530 [11008 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T11:30:51,680+0530 [11008 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T11:30:58,754+0530 [11008 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T11:30:58,756+0530 [11008 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:31:00,451+0530 [11008 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T11:31:02,492+0530 [11008 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T11:31:02,492+0530 [11008 68] com.newrelic INFO: Agent run id: BfwMq57LlkdBAEQrqj_yzJpmeQwUAAIBAAAnIQEAACsAAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T11:31:02,492+0530 [11008 68] com.newrelic INFO: Agent 11008@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T11:31:02,493+0530 [11008 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T11:31:02,495+0530 [11008 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:31:02,495+0530 [11008 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:31:02,495+0530 [11008 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:31:02,498+0530 [11008 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:31:02,498+0530 [11008 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:31:02,498+0530 [11008 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:31:03,723+0530 [11008 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T11:31:03,724+0530 [11008 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:31:38,078+0530 [11008 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T11:31:38,113+0530 [11008 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@6f2d5af4 tried to finish but ServiceManager not started
+2024-06-24T11:31:39,563+0530 [11008 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T11:32:02,709+0530 [11345 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T11:32:02,709+0530 [11345 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T11:32:02,709+0530 [11345 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T11:32:02,709+0530 [11345 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T11:32:02,710+0530 [11345 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T11:32:02,710+0530 [11345 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T11:32:03,163+0530 [11345 38] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T11:32:03,694+0530 [11345 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T11:32:03,842+0530 [11345 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T11:32:03,965+0530 [11345 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T11:32:03,969+0530 [11345 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T11:32:03,969+0530 [11345 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T11:32:03,969+0530 [11345 1] com.newrelic INFO: Premain startup complete in 2,056ms
+2024-06-24T11:32:03,971+0530 [11345 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T11:32:06,716+0530 [11345 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T11:32:13,972+0530 [11345 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T11:32:13,974+0530 [11345 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:32:15,619+0530 [11345 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T11:32:16,802+0530 [11345 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T11:32:16,802+0530 [11345 68] com.newrelic INFO: Agent run id: BZW5LhjmH8GEAEQrqj_yzJpmeQxQAAIBAAAnIQEAACxRAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T11:32:16,802+0530 [11345 68] com.newrelic INFO: Agent 11345@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T11:32:16,803+0530 [11345 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T11:32:16,805+0530 [11345 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:32:16,805+0530 [11345 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:32:16,805+0530 [11345 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:32:16,807+0530 [11345 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:32:16,807+0530 [11345 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:32:16,807+0530 [11345 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:32:18,064+0530 [11345 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T11:32:18,065+0530 [11345 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:42:25,042+0530 [11345 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T11:42:25,082+0530 [11345 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@2cf99829 tried to finish but ServiceManager not started
+2024-06-24T11:42:26,336+0530 [11345 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T11:48:09,677+0530 [13002 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T11:48:09,677+0530 [13002 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T11:48:09,678+0530 [13002 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T11:48:09,678+0530 [13002 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T11:48:09,678+0530 [13002 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T11:48:09,678+0530 [13002 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T11:48:10,136+0530 [13002 40] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T11:48:10,766+0530 [13002 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T11:48:10,914+0530 [13002 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T11:48:11,019+0530 [13002 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T11:48:11,022+0530 [13002 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T11:48:11,023+0530 [13002 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T11:48:11,023+0530 [13002 1] com.newrelic INFO: Premain startup complete in 2,156ms
+2024-06-24T11:48:11,024+0530 [13002 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T11:48:13,701+0530 [13002 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T11:48:21,024+0530 [13002 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T11:48:21,026+0530 [13002 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:48:22,650+0530 [13002 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T11:48:24,613+0530 [13002 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T11:48:24,613+0530 [13002 68] com.newrelic INFO: Agent run id: BVaoDr7twXIfAEQrqj_yzJpmeRAQAAIBAAAnIQEAADLKAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T11:48:24,614+0530 [13002 68] com.newrelic INFO: Agent 13002@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T11:48:24,614+0530 [13002 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T11:48:24,616+0530 [13002 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:48:24,616+0530 [13002 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:48:24,616+0530 [13002 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:48:24,619+0530 [13002 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:48:24,619+0530 [13002 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:48:24,619+0530 [13002 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:48:25,214+0530 [13002 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T11:48:25,214+0530 [13002 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:49:04,327+0530 [13002 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T11:49:04,358+0530 [13002 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@78fe355b tried to finish but ServiceManager not started
+2024-06-24T11:49:05,651+0530 [13002 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T11:49:08,747+0530 [13587 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T11:49:08,748+0530 [13587 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T11:49:08,748+0530 [13587 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T11:49:08,748+0530 [13587 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T11:49:08,749+0530 [13587 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T11:49:08,749+0530 [13587 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T11:49:09,237+0530 [13587 43] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T11:49:09,798+0530 [13587 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T11:49:09,956+0530 [13587 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T11:49:10,065+0530 [13587 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T11:49:10,069+0530 [13587 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T11:49:10,069+0530 [13587 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T11:49:10,069+0530 [13587 1] com.newrelic INFO: Premain startup complete in 2,159ms
+2024-06-24T11:49:10,071+0530 [13587 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T11:49:12,831+0530 [13587 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T11:49:20,072+0530 [13587 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T11:49:20,073+0530 [13587 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:49:21,430+0530 [13587 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T11:49:23,047+0530 [13587 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T11:49:23,047+0530 [13587 68] com.newrelic INFO: Agent run id: BbrMCX6B9EQ3AEQrqj_yzJpmeRBMAAIBAAAnIQEAADUTAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T11:49:23,048+0530 [13587 68] com.newrelic INFO: Agent 13587@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T11:49:23,048+0530 [13587 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T11:49:23,050+0530 [13587 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:49:23,050+0530 [13587 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:49:23,050+0530 [13587 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:49:23,052+0530 [13587 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:49:23,053+0530 [13587 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:49:23,053+0530 [13587 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:49:23,474+0530 [13587 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T11:49:23,474+0530 [13587 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:50:07,250+0530 [13587 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T11:50:07,286+0530 [13587 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@60d5372c tried to finish but ServiceManager not started
+2024-06-24T11:50:08,563+0530 [13587 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T11:50:10,397+0530 [14108 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T11:50:10,398+0530 [14108 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T11:50:10,398+0530 [14108 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T11:50:10,398+0530 [14108 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T11:50:10,398+0530 [14108 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T11:50:10,399+0530 [14108 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T11:50:10,897+0530 [14108 38] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T11:50:11,469+0530 [14108 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T11:50:11,618+0530 [14108 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T11:50:11,720+0530 [14108 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T11:50:11,724+0530 [14108 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T11:50:11,724+0530 [14108 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T11:50:11,724+0530 [14108 1] com.newrelic INFO: Premain startup complete in 2,139ms
+2024-06-24T11:50:11,726+0530 [14108 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T11:50:14,403+0530 [14108 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T11:50:21,728+0530 [14108 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T11:50:21,730+0530 [14108 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:50:23,507+0530 [14108 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T11:50:25,703+0530 [14108 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T11:50:25,704+0530 [14108 68] com.newrelic INFO: Agent run id: BTbKU020-nU1AEQrqj_yzJpmeRCIAAIBAAAnIQEAADccAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T11:50:25,704+0530 [14108 68] com.newrelic INFO: Agent 14108@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T11:50:25,704+0530 [14108 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T11:50:25,707+0530 [14108 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:50:25,707+0530 [14108 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:50:25,707+0530 [14108 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:50:25,710+0530 [14108 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T11:50:25,710+0530 [14108 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T11:50:25,711+0530 [14108 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T11:50:26,021+0530 [14108 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T11:50:26,021+0530 [14108 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T11:50:55,493+0530 [14108 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T11:50:55,528+0530 [14108 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@1f303d74 tried to finish but ServiceManager not started
+2024-06-24T11:50:56,605+0530 [14108 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T15:07:06,787+0530 [24108 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T15:07:06,788+0530 [24108 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T15:07:06,788+0530 [24108 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T15:07:06,788+0530 [24108 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T15:07:06,788+0530 [24108 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T15:07:06,788+0530 [24108 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T15:07:07,027+0530 [24108 37] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T15:07:07,343+0530 [24108 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T15:07:07,435+0530 [24108 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T15:07:07,499+0530 [24108 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T15:07:07,502+0530 [24108 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T15:07:07,502+0530 [24108 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T15:07:07,502+0530 [24108 1] com.newrelic INFO: Premain startup complete in 1,141ms
+2024-06-24T15:07:07,503+0530 [24108 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T15:07:08,959+0530 [24108 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T15:07:12,506+0530 [24108 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T15:07:12,508+0530 [24108 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T15:07:14,002+0530 [24108 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T15:07:15,855+0530 [24108 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T15:07:15,855+0530 [24108 68] com.newrelic INFO: Agent run id: BQzZV8yHiFGpAEQrqj_yzJpmeT60AAIBAAAnIQEAAF4sAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T15:07:15,856+0530 [24108 68] com.newrelic INFO: Agent 24108@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T15:07:15,856+0530 [24108 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T15:07:15,857+0530 [24108 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T15:07:15,857+0530 [24108 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T15:07:15,857+0530 [24108 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T15:07:15,858+0530 [24108 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T15:07:15,858+0530 [24108 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T15:07:15,858+0530 [24108 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T15:07:17,077+0530 [24108 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T15:07:17,078+0530 [24108 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T15:07:55,287+0530 [24108 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T15:07:55,300+0530 [24108 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@47b53c5d tried to finish but ServiceManager not started
+2024-06-24T15:07:56,589+0530 [24108 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T15:40:26,915+0530 [26103 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T15:40:26,916+0530 [26103 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T15:40:26,916+0530 [26103 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T15:40:26,916+0530 [26103 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T15:40:26,916+0530 [26103 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T15:40:26,916+0530 [26103 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T15:40:27,422+0530 [26103 40] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T15:40:28,043+0530 [26103 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T15:40:28,207+0530 [26103 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T15:40:28,314+0530 [26103 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T15:40:28,318+0530 [26103 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T15:40:28,318+0530 [26103 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T15:40:28,318+0530 [26103 1] com.newrelic INFO: Premain startup complete in 2,229ms
+2024-06-24T15:40:28,320+0530 [26103 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T15:40:31,211+0530 [26103 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T15:40:38,322+0530 [26103 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T15:40:38,324+0530 [26103 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T15:40:40,059+0530 [26103 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T15:40:42,263+0530 [26103 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T15:40:42,263+0530 [26103 68] com.newrelic INFO: Agent run id: BVkBZT-wFEr_AEQrqj_yzJpmeUZwAAIBAAAnIQEAAGX3AgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T15:40:42,263+0530 [26103 68] com.newrelic INFO: Agent 26103@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T15:40:42,264+0530 [26103 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T15:40:42,266+0530 [26103 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T15:40:42,266+0530 [26103 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T15:40:42,266+0530 [26103 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T15:40:42,268+0530 [26103 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T15:40:42,268+0530 [26103 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T15:40:42,269+0530 [26103 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T15:40:42,900+0530 [26103 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T15:40:42,900+0530 [26103 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T15:42:25,115+0530 [26103 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T15:42:25,145+0530 [26103 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@6a1dd56c tried to finish but ServiceManager not started
+2024-06-24T15:42:26,521+0530 [26103 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T15:42:43,704+0530 [26613 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T15:42:43,704+0530 [26613 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T15:42:43,704+0530 [26613 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T15:42:43,705+0530 [26613 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T15:42:43,705+0530 [26613 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T15:42:43,705+0530 [26613 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T15:42:44,208+0530 [26613 38] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T15:42:44,803+0530 [26613 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T15:42:44,964+0530 [26613 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T15:42:45,081+0530 [26613 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T15:42:45,085+0530 [26613 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T15:42:45,086+0530 [26613 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T15:42:45,086+0530 [26613 1] com.newrelic INFO: Premain startup complete in 2,135ms
+2024-06-24T15:42:45,087+0530 [26613 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T15:42:47,778+0530 [26613 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T15:42:53,122+0530 [26613 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T15:42:53,124+0530 [26613 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T15:43:49,884+0530 [26915 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T15:43:49,884+0530 [26915 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T15:43:49,884+0530 [26915 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T15:43:49,884+0530 [26915 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T15:43:49,884+0530 [26915 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T15:43:49,884+0530 [26915 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T15:43:50,340+0530 [26915 38] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T15:43:50,945+0530 [26915 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T15:43:51,100+0530 [26915 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T15:43:51,204+0530 [26915 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T15:43:51,208+0530 [26915 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T15:43:51,212+0530 [26915 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T15:43:51,212+0530 [26915 1] com.newrelic INFO: Premain startup complete in 2,118ms
+2024-06-24T15:43:51,214+0530 [26915 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T15:43:54,133+0530 [26915 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T15:44:01,211+0530 [26915 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T15:44:01,213+0530 [26915 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T15:44:03,094+0530 [26915 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T15:44:05,090+0530 [26915 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T15:44:05,091+0530 [26915 68] com.newrelic INFO: Agent run id: BVtOr8_wFkDXAEQrqj_yzJpmeUdgAAIBAAAnIQEAAGkjAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T15:44:05,091+0530 [26915 68] com.newrelic INFO: Agent 26915@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T15:44:05,091+0530 [26915 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T15:44:05,093+0530 [26915 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T15:44:05,093+0530 [26915 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T15:44:05,094+0530 [26915 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T15:44:05,096+0530 [26915 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T15:44:05,096+0530 [26915 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T15:44:05,096+0530 [26915 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T15:44:05,745+0530 [26915 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T15:44:05,746+0530 [26915 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T15:44:54,476+0530 [26915 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T15:44:54,510+0530 [26915 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@123e799a tried to finish but ServiceManager not started
+2024-06-24T15:44:55,822+0530 [26915 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T15:44:58,766+0530 [27231 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T15:44:58,766+0530 [27231 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T15:44:58,766+0530 [27231 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T15:44:58,766+0530 [27231 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T15:44:58,767+0530 [27231 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T15:44:58,767+0530 [27231 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T15:44:59,344+0530 [27231 43] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T15:44:59,890+0530 [27231 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T15:45:00,053+0530 [27231 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T15:45:00,162+0530 [27231 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T15:45:00,166+0530 [27231 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T15:45:00,166+0530 [27231 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@77468bd9
+2024-06-24T15:45:00,167+0530 [27231 1] com.newrelic INFO: Premain startup complete in 2,211ms
+2024-06-24T15:45:00,168+0530 [27231 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T15:45:03,007+0530 [27231 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T15:45:10,168+0530 [27231 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T15:45:10,170+0530 [27231 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T15:45:11,907+0530 [27231 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T15:45:13,877+0530 [27231 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T15:45:13,877+0530 [27231 68] com.newrelic INFO: Agent run id: BX_pGX6VJwfHAEQrqj_yzJpmeUecAAIBAAAnIQEAAGpfAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T15:45:13,877+0530 [27231 68] com.newrelic INFO: Agent 27231@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T15:45:13,878+0530 [27231 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T15:45:13,880+0530 [27231 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T15:45:13,880+0530 [27231 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T15:45:13,880+0530 [27231 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T15:45:13,882+0530 [27231 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T15:45:13,882+0530 [27231 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T15:45:13,883+0530 [27231 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T15:45:14,459+0530 [27231 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T15:45:14,460+0530 [27231 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T15:45:28,921+0530 [27231 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T15:45:28,960+0530 [27231 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@4668a7a0 tried to finish but ServiceManager not started
+2024-06-24T15:45:30,129+0530 [27231 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T17:13:05,326+0530 [47519 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T17:13:05,326+0530 [47519 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T17:13:05,326+0530 [47519 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T17:13:05,326+0530 [47519 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T17:13:05,326+0530 [47519 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T17:13:05,326+0530 [47519 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T17:13:05,614+0530 [47519 37] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T17:13:05,992+0530 [47519 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T17:13:06,099+0530 [47519 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T17:13:06,154+0530 [47519 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T17:13:06,156+0530 [47519 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T17:13:06,156+0530 [47519 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@4cc77c2e
+2024-06-24T17:13:06,156+0530 [47519 1] com.newrelic INFO: Premain startup complete in 1,251ms
+2024-06-24T17:13:06,157+0530 [47519 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T17:13:07,686+0530 [47519 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T17:13:11,158+0530 [47519 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T17:13:11,159+0530 [47519 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T17:13:12,815+0530 [47519 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T17:13:14,795+0530 [47519 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T17:13:14,795+0530 [47519 68] com.newrelic INFO: Agent run id: BU4PEOeSdNucAEQrqj_yzJpmeVw8AAIBAAAnIQEAALmfAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T17:13:14,795+0530 [47519 68] com.newrelic INFO: Agent 47519@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T17:13:14,796+0530 [47519 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T17:13:14,797+0530 [47519 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T17:13:14,797+0530 [47519 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T17:13:14,797+0530 [47519 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T17:13:14,798+0530 [47519 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T17:13:14,798+0530 [47519 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T17:13:14,798+0530 [47519 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T17:13:15,394+0530 [47519 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T17:13:15,394+0530 [47519 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T17:15:12,914+0530 [47519 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T17:15:12,926+0530 [47519 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@4ffc9bcf tried to finish but ServiceManager not started
+2024-06-24T17:15:14,361+0530 [47519 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T17:29:27,069+0530 [51115 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T17:29:27,070+0530 [51115 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T17:29:27,070+0530 [51115 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T17:29:27,070+0530 [51115 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T17:29:27,070+0530 [51115 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T17:29:27,070+0530 [51115 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T17:29:27,289+0530 [51115 37] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T17:29:27,598+0530 [51115 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T17:29:27,693+0530 [51115 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T17:29:27,751+0530 [51115 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T17:29:27,753+0530 [51115 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T17:29:27,753+0530 [51115 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@4cc77c2e
+2024-06-24T17:29:27,754+0530 [51115 1] com.newrelic INFO: Premain startup complete in 1,083ms
+2024-06-24T17:29:27,754+0530 [51115 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T17:29:29,178+0530 [51115 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T17:29:30,894+0530 [51115 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T17:29:30,895+0530 [51115 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-24T17:29:53,843+0530 [51401 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-24T17:29:53,843+0530 [51401 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-24T17:29:53,844+0530 [51401 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-24T17:29:53,844+0530 [51401 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-24T17:29:53,844+0530 [51401 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-24T17:29:53,844+0530 [51401 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-24T17:29:54,068+0530 [51401 37] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-24T17:29:54,386+0530 [51401 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-24T17:29:54,482+0530 [51401 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-24T17:29:54,545+0530 [51401 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-24T17:29:54,547+0530 [51401 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-24T17:29:54,547+0530 [51401 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@4cc77c2e
+2024-06-24T17:29:54,548+0530 [51401 1] com.newrelic INFO: Premain startup complete in 1,102ms
+2024-06-24T17:29:54,548+0530 [51401 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-24T17:29:55,965+0530 [51401 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-24T17:29:59,550+0530 [51401 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-24T17:29:59,552+0530 [51401 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T17:30:01,041+0530 [51401 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-24T17:30:02,932+0530 [51401 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-24T17:30:02,932+0530 [51401 68] com.newrelic INFO: Agent run id: BfUawhKPhfl3AEQrqj_yzJpmeWA4AAIBAAAnIQEAAMjJAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-24T17:30:02,932+0530 [51401 68] com.newrelic INFO: Agent 51401@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-24T17:30:02,933+0530 [51401 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-24T17:30:02,934+0530 [51401 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T17:30:02,934+0530 [51401 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T17:30:02,934+0530 [51401 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T17:30:02,935+0530 [51401 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-24T17:30:02,935+0530 [51401 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-24T17:30:02,935+0530 [51401 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-24T17:30:03,498+0530 [51401 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-24T17:30:03,498+0530 [51401 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-24T17:30:17,773+0530 [51401 33] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-24T17:30:17,786+0530 [51401 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@c530f02 tried to finish but ServiceManager not started
+2024-06-24T17:30:19,674+0530 [51401 33] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-25T14:27:15,888+0530 [19921 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-25T14:27:15,889+0530 [19921 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-25T14:27:15,889+0530 [19921 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-25T14:27:15,889+0530 [19921 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-25T14:27:15,889+0530 [19921 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-25T14:27:15,889+0530 [19921 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-25T14:27:16,617+0530 [19921 43] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-25T14:27:17,611+0530 [19921 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-25T14:27:17,914+0530 [19921 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-25T14:27:18,096+0530 [19921 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-25T14:27:18,103+0530 [19921 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-25T14:27:18,103+0530 [19921 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@4cc77c2e
+2024-06-25T14:27:18,104+0530 [19921 1] com.newrelic INFO: Premain startup complete in 3,474ms
+2024-06-25T14:27:18,106+0530 [19921 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-25T14:27:22,488+0530 [19921 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-25T14:27:28,104+0530 [19921 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-25T14:27:28,105+0530 [19921 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-25T14:27:31,022+0530 [19921 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-25T14:27:32,811+0530 [19921 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-25T14:27:32,812+0530 [19921 68] com.newrelic INFO: Agent run id: Beaizrnauml-AEQrqj_yzJpmeobUAAIBAAAnIQEAAE3RAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-25T14:27:32,812+0530 [19921 68] com.newrelic INFO: Agent 19921@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-25T14:27:32,812+0530 [19921 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-25T14:27:32,815+0530 [19921 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-25T14:27:32,815+0530 [19921 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-25T14:27:32,815+0530 [19921 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-25T14:27:32,818+0530 [19921 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-25T14:27:32,818+0530 [19921 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-25T14:27:32,818+0530 [19921 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-25T14:27:33,423+0530 [19921 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-25T14:27:33,423+0530 [19921 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-25T14:27:34,639+0530 [19921 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-25T14:27:34,676+0530 [19921 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@14a0c663 tried to finish but ServiceManager not started
+2024-06-25T14:27:36,019+0530 [19921 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-25T14:28:19,349+0530 [20494 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-25T14:28:19,350+0530 [20494 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-25T14:28:19,350+0530 [20494 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-25T14:28:19,350+0530 [20494 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-25T14:28:19,350+0530 [20494 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-25T14:28:19,350+0530 [20494 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-25T14:28:20,265+0530 [20494 40] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-25T14:28:21,179+0530 [20494 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-25T14:28:21,459+0530 [20494 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-25T14:28:21,636+0530 [20494 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-25T14:28:21,642+0530 [20494 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-25T14:28:21,642+0530 [20494 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@4cc77c2e
+2024-06-25T14:28:21,642+0530 [20494 1] com.newrelic INFO: Premain startup complete in 3,418ms
+2024-06-25T14:28:21,645+0530 [20494 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-25T14:28:25,895+0530 [20494 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-25T14:28:31,644+0530 [20494 68] com.newrelic INFO: Host name is 22b0951, display host 22b0951 for application My_local_apm
+2024-06-25T14:28:31,646+0530 [20494 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-25T14:28:33,334+0530 [20494 68] com.newrelic INFO: Collector redirection to collector.newrelic.com:443
+2024-06-25T14:28:35,219+0530 [20494 68] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2024-06-25T14:28:35,220+0530 [20494 68] com.newrelic INFO: Agent run id: BWkksQ7JLxt9AEQrqj_yzJpmeocQAAIBAAAnIQEAAFAOAgQ_8sx1AwAGOC4xMi4wAAcyMmIwOTUxAAxNeV9sb2NhbF9hcG0
+2024-06-25T14:28:35,220+0530 [20494 68] com.newrelic INFO: Agent 20494@22b0951/My_local_apm connected to collector.newrelic.com:443
+2024-06-25T14:28:35,220+0530 [20494 68] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/4467626/applications/1072876661
+2024-06-25T14:28:35,222+0530 [20494 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-25T14:28:35,223+0530 [20494 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-25T14:28:35,223+0530 [20494 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-25T14:28:35,225+0530 [20494 68] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2024-06-25T14:28:35,225+0530 [20494 68] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2024-06-25T14:28:35,225+0530 [20494 68] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2024-06-25T14:28:35,820+0530 [20494 68] com.newrelic INFO: Real user monitoring is enabled for application My_local_apm. Auto instrumentation is enabled.
+2024-06-25T14:28:35,821+0530 [20494 68] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2024-06-25T14:28:39,963+0530 [20494 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-25T14:28:40,004+0530 [20494 73] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@ea6f407 tried to finish but ServiceManager not started
+2024-06-25T14:28:41,347+0530 [20494 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2024-06-25T14:28:45,199+0530 [20987 1] com.newrelic INFO: Writing to New Relic log file: /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/logs/newrelic_agent.log
+2024-06-25T14:28:45,199+0530 [20987 1] com.newrelic INFO: JRE vendor Oracle Corporation version 22.0.1
+2024-06-25T14:28:45,200+0530 [20987 1] com.newrelic INFO: JVM vendor Oracle Corporation OpenJDK 64-Bit Server VM version 22.0.1+8-16
+2024-06-25T14:28:45,200+0530 [20987 1] com.newrelic INFO: OS Linux version 6.8.0-35-generic arch amd64
+2024-06-25T14:28:45,200+0530 [20987 1] com.newrelic INFO: Agent Host: 22b0951 IP: 127.0.1.1
+2024-06-25T14:28:45,200+0530 [20987 1] com.newrelic INFO: New Relic Agent v8.12.0 is initializing...
+2024-06-25T14:28:45,929+0530 [20987 40] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2024-06-25T14:28:46,779+0530 [20987 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2024-06-25T14:28:47,036+0530 [20987 1] com.newrelic INFO: Setting audit_mode to false
+2024-06-25T14:28:47,224+0530 [20987 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/kanak-barfa/Downloads/CRUD-RestAPI/newrelic/./newrelic.yml
+2024-06-25T14:28:47,230+0530 [20987 1] com.newrelic INFO: New Relic Agent v8.12.0 has started
+2024-06-25T14:28:47,231+0530 [20987 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@4cc77c2e
+2024-06-25T14:28:47,231+0530 [20987 1] com.newrelic INFO: Premain startup complete in 3,294ms
+2024-06-25T14:28:47,234+0530 [20987 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2024-06-25T14:28:51,861+0530 [20987 1] com.newrelic INFO: Server Info: Apache Tomcat/10.1.24
+2024-06-25T14:29:01,371+0530 [20987 34] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2024-06-25T14:29:01,374+0530 [20987 34] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
