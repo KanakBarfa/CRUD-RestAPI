@@ -98,7 +98,7 @@ common: &default_settings
     forwarding:
 
       # When true, application logs will be forwarded to New Relic. The default is true.
-      enabled: false
+      enabled: true
 
       # Application log events are collected up to the configured amount. Afterwards,
       # events are sampled to maintain an even distribution across the harvest cycle.
@@ -118,7 +118,7 @@ common: &default_settings
     local_decorating:
 
       # When true, the agent will decorate your application log files with linking metadata. The default is false.
-      enabled: true
+      enabled: false
 
   # Proxy settings for connecting to the New Relic server:
   # If a proxy is used, the host setting is required.  Other settings

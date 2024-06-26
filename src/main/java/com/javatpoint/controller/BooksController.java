@@ -29,11 +29,15 @@ public class BooksController
     @GetMapping("/book")
     private List<Books> getAllBooks()
     {
-        log.error("getAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() calledgetAllBooks() called");
         log.info("getAllBooks() called");
         return booksService.getAllBooks();
-
     }
+
+    @GetMapping("/error")
+    private String triggerError(){
+        throw new RuntimeException("This is a test");
+    }
+
     //creating a get mapping that retrieves the detail of a specific book
     @GetMapping("/book/{bookid}")
     private Books getBooks(@PathVariable("bookid") int bookid)
