@@ -32,7 +32,6 @@ public class BooksController
         log.info("getAllBooks() called");
         return booksService.getAllBooks();
     }
-
     @GetMapping("/error")
     private String triggerError(){
         throw new RuntimeException("This is a test");
