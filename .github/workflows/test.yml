@@ -3,7 +3,6 @@ name: Read and Print Commit ID
 on:
   push:
     branches:
-      - master
       - main
 
 jobs:
