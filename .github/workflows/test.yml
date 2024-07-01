@@ -5,6 +5,10 @@ on:
     branches:
       - master
       - main
+  commit:
+    branches:
+      - main
+      - master
 
 jobs:
   save-commit-id:
