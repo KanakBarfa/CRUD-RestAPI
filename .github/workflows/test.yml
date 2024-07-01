@@ -1,0 +1,29 @@
+name: Read and Print Commit ID
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  save-commit-id:
+    runs-on: ubuntu-latest
+    outputs:
+      commit-id: ${{ steps.get-commit-id.outputs.commit-id }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Get commit ID
+        id: get-commit-id
+        run: echo "::set-output name=commit-id::$(git rev-parse HEAD)"
+
+      - name: Save commit ID
+        run: echo "${{ steps.get-commit-id.outputs.commit-id }}" > commit_id.txt
+
+  print-commit-id:
+    runs-on: ubuntu-latest
+    needs: save-commit-id
+    steps:
+      - name: Print commit ID
+        run: cat commit_id.txt
