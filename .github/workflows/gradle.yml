@@ -29,3 +29,4 @@ jobs:
       run: |
         echo ${{github.event.inputs.book}}
         echo ${{github.event.inputs.price}}
+        echo ${{github.sha}}
