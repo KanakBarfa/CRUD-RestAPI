@@ -29,3 +29,12 @@ jobs:
         echo ${{github.event.inputs.book}}
         echo ${{github.event.inputs.price}}
         echo ${{github.sha}}
+
+    - name: Atrifact check
+      uses: actions/download-artifact@v3
+      with:
+        name: ${{github.sha}}
+
+    - name: print artifact
+      run: |
+        cat hha.txt
