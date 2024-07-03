@@ -31,7 +31,7 @@ jobs:
         echo ${{github.sha}}
 
     - name: Atrifact check
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: ${{github.sha}}
 
