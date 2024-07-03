@@ -1,23 +1,17 @@
-name: Check artifact
-
+name: First Workflow
 on:
   push:
     branches:
       - main
 jobs:
-  save-commit-id:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Create output file
+        run: echo "This is some output data from the first workflow" > output.txt
 
-      - name: Get commit ID
-        id: get-commit-id
-        run: |
-          echo "$(git rev-parse HEAD)" >> hha.txt
-
-      - name: Upload commit_id
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: idk
-          path: hha.txt
+          name: first-workflow-output
+          path: output.txt

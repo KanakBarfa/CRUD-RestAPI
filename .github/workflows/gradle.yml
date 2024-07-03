@@ -1,42 +1,19 @@
-name: Testing
+name: Second Workflow
 on:
-  workflow_dispatch:
-    inputs:
-      book:
-        options:
-          - 'yes'
-          - 'no'
-        default: 'no'
-        description: Read or not
-        required: true
-      price:
-        options:
-          - '100'
-          - '200'
-        required: true
-        default: '200'
-        description: Price of the book
+  workflow_run:
+    workflows: ["First Workflow"]
+    types:
+      - completed
+
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-
     steps:
-    - name: Check
-      run: |
-        echo ${{github.event.inputs.book}}
-        echo ${{github.event.inputs.price}}
-        echo ${{github.sha}}
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: first-workflow-output
+          path: .
 
-    - name: Atrifact check
-      uses: actions/download-artifact@v4
-      with:
-        run-id: ${{ github.event.workflow_run.id }}
-        name: idk
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: print artifact
-      run: |
-        cat hha.txt
+      - name: Use output
+        run: cat output.txt
