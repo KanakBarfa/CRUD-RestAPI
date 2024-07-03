@@ -16,7 +16,6 @@ on:
         required: true
         default: '200'
         description: Price of the book
-
 jobs:
   build:
 
