@@ -33,7 +33,9 @@ jobs:
     - name: Atrifact check
       uses: actions/download-artifact@v4
       with:
-        name: ${{github.sha}}
+        name: idk
+        run-id: ${{ github.event.workflow_run.id }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: print artifact
       run: |
