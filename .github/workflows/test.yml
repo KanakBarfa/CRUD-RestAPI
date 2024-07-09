@@ -21,11 +21,11 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
 
       - name: Send Slack Approval
-        id: slack
+        id: slack-test
         uses: slackapi/slack-github-action@v1.19.0
         with:
-            channel-id: ${{ secrets.SLACK_CHANNEL_ID }}
+            channel-id: 'C07BDESKPBQ'
             text: 'Do you approve the deployment to ECS?'
-            token: ${{ secrets.SLACK_TOKEN }}
+            token: ${{ secrets.SLACK_BOT_TOKEN }}
             timeout: 10m
             prompt: yesno
