@@ -15,6 +15,7 @@ jobs:
           name: first-workflow-output
           path: .
           run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{secrets.GITHUB_TOKEN}}
 
       - name: Use output
         run: cat output.txt
