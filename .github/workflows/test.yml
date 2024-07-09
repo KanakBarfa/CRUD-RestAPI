@@ -21,52 +21,21 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
 
       - name: Send Slack Approval
-        id: slack-test
-        uses: slackapi/slack-github-action@v1.19.0
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        with:
-            channel-id: 'C07BDESKPBQ'
-            text: 'Do you approve the deployment to ECS?'
-            timeout: 10m
-            prompt: yesno
-            payload: |
-              {
-                  "text": "Would you like to play a game?",
-                  "attachments": [
-                      {
-                          "text": "Choose a game to play",
-                          "fallback": "You are unable to choose a game",
-                          "callback_id": "wopr_game",
-                          "color": "#3AA3E3",
-                          "attachment_type": "default",
-                          "actions": [
-                              {
-                                  "name": "game",
-                                  "text": "Chess",
-                                  "type": "button",
-                                  "value": "chess"
-                              },
-                              {
-                                  "name": "game",
-                                  "text": "Falken's Maze",
-                                  "type": "button",
-                                  "value": "maze"
-                              },
-                              {
-                                  "name": "game",
-                                  "text": "Thermonuclear War",
-                                  "style": "danger",
-                                  "type": "button",
-                                  "value": "war",
-                                  "confirm": {
-                                      "title": "Are you sure?",
-                                      "text": "Wouldn't you prefer a good game of chess?",
-                                      "ok_text": "Yes",
-                                      "dismiss_text": "No"
-                                  }
-                              }
-                          ]
-                      }
-                  ]
-              }
+        id: slack
+        run: |
+            curl -X POST -H 'Content-type: application/json' \
+            --data '{"channel":"C07BDESKPBQ","text":"Do you approve the deployment to ECS?","attachments":[{"text":"Approve deployment?","fallback":"You are unable to approve","callback_id":"deploy_approval","color":"#3AA3E3","attachment_type":"default","actions":[{"name":"approval","text":"Approve","type":"button","value":"yes"},{"name":"approval","text":"Reject","type":"button","value":"no"}]}]}' \
+            https://slack.com/api/chat.postMessage \
+            -H "Authorization: Bearer ${{ secrets.SLACK_BOT_TOKEN }}"
+
+      - name: Wait for Approval
+        id: wait
+        run: |
+            for i in {1..60}; do
+              response=$(curl -s -H "Authorization: Bearer ${{ secrets.SLACK_BOT_TOKEN }}" -H "Content-type: application/json" -X POST -d '{"channel":"${{ secrets.SLACK_CHANNEL_ID }}","count":1,"inclusive":true}' https://slack.com/api/conversations.history | jq -r '.messages[] | select(.attachments != null) | .attachments[] | select(.callback_id == "deploy_approval") | .actions[] | select(.name == "approval") | .value')
+              if [ "$response" == "yes" ] || [ "$response" == "no" ]; then
+                echo "response=$response" >> $GITHUB_ENV
+                break
+              fi
+              sleep 10
+            done
