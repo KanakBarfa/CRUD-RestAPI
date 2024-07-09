@@ -1,9 +1,6 @@
 name: Second Workflow
 on:
-  workflow_run:
-    workflows: ["First Workflow"]
-    types:
-      - completed
+  workflow_dispatch:
 
 jobs:
   build:
