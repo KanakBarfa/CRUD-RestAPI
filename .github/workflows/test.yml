@@ -24,10 +24,10 @@ jobs:
           for i in {1..60}; do
             response=$(curl -s -H "Authorization: Bearer ${{ secrets.SLACK_BOT_TOKEN }}" -H "Content-type: application/json" \
               "https://slack.com/api/conversations.replies?channel=C07BDESKPBQ&ts=${{ env.SLACK_TS }}")
-            if echo "$response" | jq -r '.messages[] | select(.text == "yes")'; then
+            if [[ `echo "$response" | jq -r '.messages[1] | select(.text == "yes")'` != "" ]]; then
               approved=yes
               break
-            elif echo "$response" | jq -r '.messages[] | select(.text == "no")'; then
+            elif [[ `echo "$response" | jq -r '.messages[1] | select(.text == "no")'` != "" ]]; then
               approved=no
               break
             fi
