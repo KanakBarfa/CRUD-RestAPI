@@ -1,18 +1,31 @@
 name: Print Service Names
+
 on:
   workflow_dispatch:
     inputs:
       SERVICE_NAMES:
         description: 'Comma-separated list of service names'
-        required: false
-        default: apple", "mango", "banana
+        required: true
+        default: 'apple,mango,banana'
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      services: ${{ steps.set-matrix.outputs.services }}
+    steps:
+      - name: Set matrix
+        id: set-matrix
+        run: |
+          SERVICES=$(echo "${{ github.event.inputs.SERVICE_NAMES }}" | tr ',' '\n' | jq -R -s -c 'split("\n")[:-1]')
+          echo "::set-output name=services::$SERVICES"
+
   print-services:
+    needs: prepare
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service: [ "${{ inputs.SERVICE_NAMES }}" ]
+        service: ${{ fromJson(needs.prepare.outputs.services) }}
     steps:
       - name: Print service name
         run: |
