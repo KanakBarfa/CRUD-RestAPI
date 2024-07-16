@@ -5,17 +5,14 @@ on:
       SERVICE_NAMES:
         description: 'Comma-separated list of service names'
         required: false
-        default: apple,mango,banana
+        default: apple mango banana
 
 jobs:
   print-services:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service:
-          - apple
-          - mango
-          - banana
+        service: ${{ inputs.SERVICE_NAMES }}
     steps:
       - name: Print service name
         run: |
