@@ -1,19 +1,20 @@
-name: Second Workflow
+name: Print Service Names
+
 on:
   workflow_dispatch:
-
+    inputs:
+      SERVICE_NAMES:
+        description: 'Comma-separated list of service names'
+        required: false
+        default: 'apple, mango, banana'
 
 jobs:
-  build:
+  print-services:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        service: ${{ fromJson(toJson(inputs.SERVICE_NAMES.split[','])) }}
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: first-workflow-output
-          path: .
-          run-id: ${{ github.event.workflow_run.id }}
-          github-token: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Use output
-        run: cat output.txt
+      - name: Print service name
+        run: |
+          echo "Service Name: ${{ matrix.service }}"

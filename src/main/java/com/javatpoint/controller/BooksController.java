@@ -21,7 +21,7 @@ public class BooksController
     @Autowired
     BooksService booksService;
     //creating a get mapping that retrieves all the books detail from the database
-    @GetMapping("/book")
+    @GetMapping("/books")
     private List<Books> getAllBooks()
     {
         log.info("getAllBooks() called");
@@ -33,13 +33,13 @@ public class BooksController
     }
 
     //creating a get mapping that retrieves the detail of a specific book
-    @GetMapping("/book/{bookid}")
+    @GetMapping("/books/{bookid}")
     private Books getBooks(@PathVariable("bookid") int bookid)
     {
         return booksService.getBooksById(bookid);
     }
     //creating a delete mapping that deletes a specified book
-    @DeleteMapping("/book/{bookid}")
+    @DeleteMapping("/books/{bookid}")
     private void deleteBook(@PathVariable("bookid") int bookid)
     {
         booksService.delete(bookid);
