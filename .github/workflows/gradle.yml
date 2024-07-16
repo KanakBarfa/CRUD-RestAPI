@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service: [ ${{ inputs.SERVICE_NAMES }} ]
+        service: \[ ${{ inputs.SERVICE_NAMES }} \]
     steps:
       - name: Print service name
         run: |
