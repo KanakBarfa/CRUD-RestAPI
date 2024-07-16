@@ -6,7 +6,7 @@ on:
       SERVICE_NAMES:
         description: 'Comma-separated list of service names'
         required: true
-        default: 'apple,mango,banana'
+        default: 'apple,mango,banana,litchi'
 
 jobs:
   prepare:
@@ -29,4 +29,12 @@ jobs:
     steps:
       - name: Print service name
         run: |
-          echo "Service Name: ${{ matrix.service }}"
+          echo "${{matrix.service}}=${{ matrix.service }}" >> $GITHUB_OUTPUT
+
+  test:
+    needs: print-services
+    runs-on: ubuntu-latest
+    steps:
+      - name : Test
+        run: |
+          echo ${{needs.print-services.outputs.apple}}
