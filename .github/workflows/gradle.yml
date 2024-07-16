@@ -12,7 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service: [${{ inputs.SERVICE_NAMES }}]
+        service:
+          - apple
+          - mango
+          - banana
     steps:
       - name: Print service name
         run: |
