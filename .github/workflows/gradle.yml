@@ -18,7 +18,7 @@ jobs:
         id: set-matrix
         run: |
           SERVICES=$(echo "${{ github.event.inputs.SERVICE_NAMES }}" | tr ',' '\n' | jq -R -s -c 'split("\n")[:-1]')
-          echo "::set-output name=services::$SERVICES"
+          echo "services=$SERVICES" >> $GITHUB_OUTPUT
 
   print-services:
     needs: prepare
