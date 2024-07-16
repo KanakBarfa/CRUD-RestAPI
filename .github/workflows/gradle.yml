@@ -1,6 +1,11 @@
 name: Print Service Names
 on:
   workflow_dispatch:
+    inputs:
+      SERVICE_NAMES:
+        description: 'Comma-separated list of service names'
+        required: false
+        default: ["apple", "mango", "banana"]
 
 jobs:
   print-services:
