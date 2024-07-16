@@ -1,19 +1,13 @@
 name: Print Service Names
-
 on:
   workflow_dispatch:
-    inputs:
-      SERVICE_NAMES:
-        description: 'Comma-separated list of service names'
-        required: false
-        default: ["apple", "mango", "banana"]
 
 jobs:
   print-services:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service: ${{ inputs.SERVICE_NAMES }}
+        service: ["apple", "mango", "banana"]
     steps:
       - name: Print service name
         run: |
